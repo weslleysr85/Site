@@ -13,12 +13,14 @@ body {
     height: 100px; 
     line-height: 100px;
     text-align: center;
+    background-color: #012b01;
+    color: #ffffff;  
+
 }
 
 
 #logo{    
     font-size: larger;
-    background-color: #2ef32e; 
 }
 
 #center{
@@ -29,6 +31,4 @@ body {
     bottom: 0;
     position: absolute;    
     font-size:small;        
-    color: #ffffff;  
-    background-color: #012b01;
 }
