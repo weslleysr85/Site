@@ -1,19 +1,34 @@
-body {
-    width: 100%;
-    background-color: #ececec;
+html, body {
+    min-height: 100%;
 }
 
-#logo{
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#logo, #footer{
+    width: 100%;
+    height: 100px; 
+    line-height: 100px;
+    text-align: center;
+}
+
+
+#logo{    
     font-size: larger;
+    background-color: #2ef32e; 
 }
 
 #center{
-    font-size:medium;
+    font-size:medium;   
 }
 
 #footer{    
     bottom: 0;
-    position: absolute;
-    font-size:small;    
-    background-color: #aeb1ae;
+    position: absolute;    
+    font-size:small;        
+    color: #ffffff;  
+    background-color: #012b01;
 }
