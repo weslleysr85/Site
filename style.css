@@ -1,8 +1,19 @@
 body {
     width: 100%;
-    background-color: #afeeb2;
+    background-color: #ececec;
 }
 
-#baseboard{
+#logo{
+    font-size: larger;
+}
+
+#center{
+    font-size:medium;
+}
+
+#footer{    
+    bottom: 0;
+    position: absolute;
+    font-size:small;    
     background-color: #aeb1ae;
 }
