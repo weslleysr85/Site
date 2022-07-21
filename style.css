@@ -1,11 +1,17 @@
 html, body {
     min-height: 100%;
+   
 }
 
 body {
     width: 100%;
     padding: 0;
     margin: 0;
+    
+    background-image: url(https://logodownload.org/wp-content/uploads/2015/05/palmeiras-logo-0.png);
+    background-color: #9fbd9f;
+    background-size: 100%;   
+    background-blend-mode:overlay;
 }
 
 #logo, #footer{
