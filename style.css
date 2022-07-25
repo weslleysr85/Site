@@ -8,10 +8,11 @@ body {
     padding: 0;
     margin: 0;
     
-    /*background-image: url(https://logodownload.org/wp-content/uploads/2015/05/palmeiras-logo-0.png);
-    background-color: #9fbd9f;
+    /*background-image: url(https://logodownload.org/wp-content/uploads/2015/05/palmeiras-logo-0.png);*/
+    background-image: url(image/cruz.jpg);
+    background-color: #e6e4e4;
     background-size: 100%;   
-    background-blend-mode:overlay;*/
+    background-blend-mode:overlay;
 }
 
 #logo, #footer{
