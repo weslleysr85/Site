@@ -1,5 +1,6 @@
 html, body {
     min-height: 100%;
+    font-family: "Lucida Console", "Courier New", monospace;
    
 }
 
@@ -8,11 +9,11 @@ body {
     padding: 0;
     margin: 0;
     
-    /*background-image: url(https://logodownload.org/wp-content/uploads/2015/05/palmeiras-logo-0.png);*/
+    /*background-image: url(https://logodownload.org/wp-content/uploads/2015/05/palmeiras-logo-0.png);
     background-image: url(img/cruz.jpg);
     background-color: #e6e4e4;
     background-size: 100%;   
-    background-blend-mode:overlay;
+    background-blend-mode:overlay;*/
 }
 
 #logo, #footer{
@@ -20,8 +21,8 @@ body {
     height: 100px; 
     line-height: 100px;
     text-align: center;
-    background-color: #012b01;
-    color: #ffffff; 
+    background-color: #1a2c35;
+    color: #cfcfcf; 
 }
 
 #logo{    
