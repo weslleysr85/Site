@@ -3,7 +3,7 @@ export default function createGameRender (game)
 {
     const screen = document.getElementById("screen");
     const context = screen.getContext('2d');
-    requestAnimationFrame(renderScreen);
+    requestAnimationFrame(renderScreen); //executa a função renderScreen() que chama ela mesma a cada frame
    
     function renderScreen () 
     {

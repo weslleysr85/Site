@@ -6,16 +6,25 @@ import { Server } from 'socket.io';
 const app = express();
 const server = http.createServer(app);
 const sockets = new Server(server);
+var ping = Date.now();
+
+function pingNow(){
+    var pingNow = Date.now() - ping;
+    ping = Date.now();
+    return pingNow;
+}
 
 app.use(express.static('public'));
 
 const game = createGame();
 game.start();
 
-game.subscribe((command) => {
-    console.log(`Emitting ${command.type}`);
+game.subscribe((command) => {    
+    console.log(`Emitting ${command.type}`,pingNow());
     sockets.emit(command.type, command);
 });
+
+
 
 console.log(game.state); //{ size: 40, players: {}, fruits: {} }
 
