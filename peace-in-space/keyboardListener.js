@@ -3,7 +3,8 @@ function createKeyboardListener()
     function notifyAll (command)
     {
         console.log(command);        
-    }
+    }     
+   
    
     document.addEventListener('keydown', handleKeydown);
     function handleKeydown (event)
