@@ -4,22 +4,22 @@ import UUID from "./uuid.js"
 function createGame () 
 {
     const acceptedMoves = {
-        ArrowUp(player) 
+        w(player) 
         {
             if(player.y > 0) player.y--;
         },
-        ArrowDown(player)
+        s(player)
         {
             if(player.y < state.size-1) player.y++;
         },
-        ArrowLeft(player)
+        a(player)
         {
             if(player.x > 0) player.x--;
         },
-        ArrowRight(player)
+        d(player)
         {
             if(player.x < state.size-1) player.x++;
-        },   
+        },          
        
     }
 
@@ -62,7 +62,8 @@ function createGame ()
         const { 
             id, 
             x = Math.floor(Math.random() * state.size), 
-            y = Math.floor(Math.random() * state.size) 
+            y = Math.floor(Math.random() * state.size)
+           
         } = command;
 
         state.players[id] = { id, x, y, points:0 };

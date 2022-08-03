@@ -15,18 +15,29 @@ export default function createGameRender (game)
         function drawRect (rect)
         {
             context.fillStyle = rect.color;
-            context.fillRect(rect.x*pixelSize, rect.y*pixelSize, pixelSize, pixelSize);            
+            context.fillRect(rect.x*pixelSize, rect.y*pixelSize, pixelSize, pixelSize);                    
+        }
+
+        function drawImage (img){            
+            context.drawImage(img.myImage, img.x*pixelSize, img.y*pixelSize, pixelSize, pixelSize);
         }
        
         //--- Renderizar players e fruits ----//
         for(const pid in game.state.players){
             const player = game.state.players[pid];
-            drawRect({...player, color:pid===game.current?'yellow':'black'})
+           // drawRect({...player, color:pid===game.current?'yellow':'black'})
+            let img  = document.getElementById("playerImage");
+            let img2 = document.getElementById("outerPlayerImage");
+            drawImage ({...player, myImage : pid===game.current?img:img2}  )
         }
 
         for(const fid in game.state.fruits){
             const player = game.state.fruits[fid];
-            drawRect({...player, color:'green'})  
+            //drawRect({...player, color:'green'}) 
+            let img = document.getElementById("itemImage");
+            drawImage ({...player, myImage : img}  ) 
+
+
         }
 
         const playerPoints = document.getElementById("points");
