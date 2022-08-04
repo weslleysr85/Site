@@ -1,9 +1,3 @@
-tasks:
-  - init: |
-      echo 'TODO: build project'
-  -  command: |
-      python -m http.server 8000    
-
 ports:
   - port: 8000
     onOpen: open-preview
