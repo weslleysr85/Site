@@ -3,6 +3,7 @@ tasks:
       echo 'init OK'
     command: |
       echo 'command OK'
+      python -m http.server 8000
 
 ports:
   - name: site
