@@ -9,4 +9,5 @@ ports:
   - name: site
     description: Página principal
     port: 8000
+    visibility: public
     onOpen: open-browser
