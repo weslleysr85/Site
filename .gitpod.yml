@@ -3,6 +3,7 @@ tasks:
       echo 'TODO: build project'
     command: |
       echo 'TODO: start app'
+      cd peace-in-space
 
 ports:
   - port: 8000
