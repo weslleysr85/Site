@@ -6,8 +6,14 @@ tasks:
       python -m http.server 8000
 
 ports:
-  - name: site
+  - name: Site
     description: Página principal
     port: 8000
     visibility: public
     onOpen: open-browser
+    
+  - name: Game
+    description: Jogo usando server em Node.js
+    port: 3000
+    visibility: public
+    onOpen: open-browser  
