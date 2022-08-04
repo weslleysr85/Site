@@ -10,16 +10,13 @@
     <script src="/socket.io/socket.io.js"></script>   
 </head>
 <body>   
-    <div id="hud">Lives: <span id="lives">0</span><br>
-        Force: <span id="force">0</span><br>
+    <div id="hud">
         Points: <span id="points">0</span>
     </div>
-    <canvas id="screen" width="1000" height="1000" >ERROR: the browser does not support canvas</canvas>
-         
-    <img id="outerPlayerImage" src="./img/nave-parceira.png">   
-    <img id="itemImage" src="./img/item.png">  
-    <img id="playerImage" src="./img/nave.png">          
+    <canvas id="screen" width="1000" height="1000" >ERROR: the browser does not support canvas</canvas>         
+    <div id="hud">
+        High Score: <span id="highScore">0</span>
+    </div>
     <script type="module" src="./index.js"></script>
-    
 </body>
 </html>
