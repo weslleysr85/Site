@@ -5,5 +5,7 @@ tasks:
       echo 'command OK'
 
 ports:
-  - port: 8000
-    onOpen: open-preview
+  - name: site
+    description: Página principal
+    port: 8000
+    onOpen: open-browser
