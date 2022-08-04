@@ -1,8 +1,8 @@
 tasks:
   - init: |
-      echo 'TODO: build project'
+      echo 'TODO: build project OK'
     command: |
-      echo 'TODO: start app'
+      echo 'TODO: start app OK'
 
 ports:
   - name: Site
