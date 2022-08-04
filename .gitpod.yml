@@ -1,7 +1,7 @@
 tasks:
-  - init: python -m http.server 8000
+  - init: echo 'init OK'
     command: |
-      echo 'está tudo bem'
+      echo 'command OK'
 
 ports:
   - port: 8000
