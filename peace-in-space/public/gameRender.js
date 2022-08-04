@@ -14,11 +14,15 @@ export default function createGameRender (game)
     itemImg.src = "img/item.png";
 
     
-    const highScore = document.getElementById("highScore");; //HUD
+    const highScore = document.getElementById("highScore"); //HUD
+    const playersOn = document.getElementById("playersOn");
+    
+
 
     function renderScreen () 
     {
-       
+        var contPlayers = 0;//HUD
+
         context.clearRect(0, 0, screen.width, screen.height); //variaveis no index.html
 
         const pixelSize = screen.width / game.state.size;
@@ -34,6 +38,7 @@ export default function createGameRender (game)
         }
        
         //--- Renderizar players e fruits ----//
+        
         for(const pid in game.state.players){
             const player = game.state.players[pid];
            // drawRect({...player, color:pid===game.current?'yellow':'black'})
@@ -41,6 +46,7 @@ export default function createGameRender (game)
             //let img2 = document.getElementById("outerPlayerImage");            
             drawImg ({...player, myImage : pid===game.current?playerImg:outerPlayerImg}  );
             if (player.points > highScore.innerHTML) { highScore.innerText = player.points};//HUD
+            contPlayers++;
         }
 
         for(const fid in game.state.fruits){
@@ -54,6 +60,8 @@ export default function createGameRender (game)
         const playerPoints = document.getElementById("points");
         const currentPlayer = game.state.players[game.current];
         if(currentPlayer) playerPoints.innerText = currentPlayer.points;
+
+        playersOn.innerText = contPlayers;
 
         requestAnimationFrame(renderScreen); //cria o loop de atualização de tela
         
