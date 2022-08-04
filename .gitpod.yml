@@ -1,7 +1,7 @@
 tasks:
   - init: |
       echo 'init OK'
-    command: |
+  -  command: |
       echo 'command OK'
       python -m http.server 8000
 
@@ -11,7 +11,7 @@ ports:
     port: 8000
     visibility: public
     onOpen: open-browser
-    
+
   - name: Game
     description: Jogo usando server em Node.js
     port: 3000
