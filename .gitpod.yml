@@ -1,5 +1,6 @@
 tasks:
-  - init: echo 'init OK'
+  - init: |
+      echo 'init OK'
     command: |
       echo 'command OK'
 
