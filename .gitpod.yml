@@ -2,8 +2,7 @@ tasks:
   - init: |
       echo 'TODO: build project'
     command: |
-      python -m http.server 8000
-      echo 'TODO: start app'
+      python -m http.server 8000    
 
 ports:
   - port: 8000
