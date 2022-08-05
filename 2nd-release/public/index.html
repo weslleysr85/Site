@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peace in Space</title>
+    <link rel="stylesheet" type="text/css" href="../../reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <script src="/socket.io/socket.io.js"></script>   
+</head>
+<body>   
+    <div id="hud">
+        Points: <span id="points">0</span>
+    </div>
+    <canvas id="screen" width="1000" height="1000" >ERROR: the browser does not support canvas</canvas>         
+    <div id="hud">
+        High Score: <span id="highScore">0</span> <br>
+        Players On: <span id="playersOn">0</span>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
