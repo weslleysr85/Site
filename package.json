@@ -1,0 +1,23 @@
+{
+    "name": "site",
+    "version": "1.0.0",
+    "description": "meu site",
+    "main": "index.html",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Weslley",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "bugs": {
+      "url": ""
+    },
+    "homepage": "",
+    "keywords": [
+      "express",
+      "server"
+    ]
+  }
